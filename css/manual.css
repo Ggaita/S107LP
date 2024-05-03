@@ -1,0 +1,457 @@
+/* CSS Document */
+
+
+/* Generales */
+
+html, body { 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	font-family: "M PLUS 1 Code", monospace;
+	font-size:1em;
+	 color:#333;
+}
+
+#ventana  { 
+	width:100%; 
+	height:85%; 
+	display:block; 
+	border:none;
+}
+
+#trigger, .uno, .dos, .atras { 
+	cursor:pointer; 
+}
+
+
+
+a { 
+	font-family: "M PLUS 1 Code", monospace;
+	font-size:0.9em; 
+	font-weight: bold;
+	color:#333;
+	text-decoration:none;
+}
+
+
+a:hover { 
+	color: rgb(236, 152, 26); 
+	text-decoration:underline; 
+}
+	
+
+.link { 
+	width:100%; 
+	height:100%; 
+	display:block; 
+}
+
+
+.foot {
+	/*relative:absolute; margin-top:5px;*/
+	width:98%;  
+	text-align:right;
+}
+
+.foot span {
+	font-size: 0.9em; 
+	font-family: "M PLUS 1 Code", monospace;
+	color:#888;	
+}
+
+.foot a   {
+	font-size: 0.9em;
+	font-family: "M PLUS 1 Code", monospace;
+	color:#888;
+	text-decoration:none;
+}
+
+.foot a:hover   { 
+	color:#333; 
+}
+
+.foot a.aviso   {
+	color:rgb(15, 12, 189);
+	text-decoration:none;
+}
+
+
+
+/*  ESCRITORIO   */
+
+@media only screen and (min-width:860px) {
+	
+/* header */
+
+
+
+#cabecera {
+	width:100%;
+	height:75px;
+	background: linear-gradient(rgb(8, 31, 238), rgb(248, 124, 8));
+	border-bottom:1px solid #ffffff25;
+	box-sizing: border-box;
+	}	
+
+#cabecera .logosem { 
+	width:240px; 
+	height:70px;
+	margin-top:10px;
+	margin-left: 10px;
+	background-image: url("../images/SEM\ LOGO.png");
+	background-repeat: no-repeat;
+	float:left;
+	}
+/*#cabecera .logosamur { 
+	width:56px; height:66px;
+	background-image: url("../images/logoSamur.png");
+	float:left;
+	}*/
+
+
+.menusup, .menusup ul { 
+	margin:0; 
+	padding:0; 
+	list-style-type:none; 
+	width:98%;
+}
+
+.menusup > li {
+	float:left;
+}
+
+.colab:after { 
+	content: 'Colaboradores';
+	font-weight:bold;
+}
+
+.vadem:after { 
+	content: 'Vadem\00e9''cum'; 
+	font-weight:bold;
+}
+
+.abrev:after { 
+	content: 'Abreviaturas';
+	font-weight:bold;
+}
+
+#trigger:after { 
+	content: 'Men\00fa';
+	display: inline-block;
+	height:33px;
+	width:75px;
+	background-image: url("../images/icoMenu.png");
+	background-position:40px 3px; 
+	background-repeat:no-repeat;  
+}
+
+
+.menusup a { 
+	display:block;
+	color:#FFF; 
+	text-decoration:none;
+	padding:34px 20px 0;
+	margin-left: 90px; 
+	font-size:1.2em; 
+}
+
+.menusup > :first-child { 
+	width:34%; 
+}
+
+.menusup #trigger { 
+	display:block; 
+	padding:30px 0 0 0; 
+	color:#FFF; 
+	margin-left:42px; 
+	font-weight:bold;
+	font-family: "M PLUS 1 Code", monospace;
+}
+
+.menusup a:hover {
+	color: rgb(236, 152, 26); 
+}
+
+.menusup #trigger:hover {
+	color: rgb(236, 152, 26); 
+}
+
+
+
+
+/* Menu de navegación */
+
+#nav {
+	width:400px; 
+	height:89%;
+	position:absolute;
+	top:80px;
+	left:0px;
+	}
+
+#menu { 
+	background-color: rgba(237,242,255,0.6); 
+	margin:0;
+	padding:0; 
+	list-style-type:none; 
+	height:95%; 
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+	
+#menu ul {
+	width:400px; 
+	height:95%;
+	position:absolute;
+	top:0; 
+	left:-800px;
+	background-color: rgba(237,242,255,0.8); 
+	margin:0; 
+	padding:0; 
+	list-style-type:none;
+}
+
+
+
+#menu ul ul { 
+	top:0; 
+}
+
+
+/* Estilo menu */
+
+#menu li {
+	height: 40px; 
+	padding-left:20px; 
+	padding-top:8px;
+	box-sizing:border-box;
+	border-bottom: 1px solid #ddd; 
+	border-right: 1px solid #ddd;
+	background-color: rgb(246,247,255);
+}
+
+#menu li.doble { 
+	height:48px; 
+}
+
+#trigger {
+	font-family: "M PLUS 1 Code", monospace;
+	font-size:1.2em;
+	width:100%;
+	display:block;
+	}
+}
+
+.uno, .dos, .atras { 
+	font-family: "M PLUS 1 Code", monospace;
+	font-size:0.9em;
+	width:100%; 
+	display:block;
+	}
+
+#menu li.mas { 
+	background-image: url("../images/mas.png"); 
+	background-position:95%; 
+	background-repeat:no-repeat; 
+	background-color: rgb(237,242,255); 
+	padding-top:9px; 
+}
+
+	
+#menu li.back {
+	height:40px; 
+	font-weight:bold; 
+	color: rgb(57,92,105); 
+	background-color: rgb(255,255,255); 
+	background-image: url("../images/back.png"); 
+	background-position:95%; 
+	background-repeat:no-repeat;
+}
+
+#menu li.back span {
+	margin-left:-12px; 
+	margin-top:5px;
+}
+
+
+/* TABLET/MOVIL */
+
+@media only screen and (max-width:859px) and (min-width:250px) {
+
+/* Navegación */
+
+/*body { overflow-y:hidden; }
+*/
+
+#cabecera {
+	width:100%; 
+	height:47px;
+	background: linear-gradient(rgb(8, 31, 238), rgb(248, 124, 8));
+	border-bottom:2px solid #FFF;
+	padding:0; 
+	box-sizing: border-box;
+}	
+
+#cabecera .logosem { 
+	width:190px; 
+	height:45px;
+	margin-top:0; 
+	margin-left:8px;
+	background-image: url("../images/SEM\ LOGO.png");
+	background-size: 100% 100%;
+	float:left;
+}
+
+/*#cabecera .logosamur { 
+	width:34px; height:40px;
+	margin-top:-3px;
+	background-image: url("../images/Iconos/SEM\ LOGO.png");
+	background-size: 100% 100%;
+	float:left;
+	}*/
+	
+.foot span { 
+	display:none; 
+}
+
+
+.menusup, .menusup ul { 
+	margin:0; 
+	padding:0; 
+	list-style-type:none;
+}
+
+.menusup > li {
+	float:right; 
+}
+
+.menusup > li a:after, #trigger:after { 
+	content: ''; 
+	display: inline-block; 
+	height:23px; 
+}
+
+.abrev:after { 
+	background-image: url("../images/icoAbr.png"); 
+	width:42px; 
+}
+
+.colab:after { 
+	background-image: url("../images/icoCol.png"); 
+	width:27px;  
+}
+
+.vadem:after { 
+	background-image: url("../images/icoVad.png"); 
+	width:28px; 
+}
+
+#trigger:after { 
+	background-image: url("../images/icoMenu.png"); 
+	width:30px; 
+}
+
+.menusup a { 
+	display:block; 
+	padding:10px 5px 0 0; 
+}
+
+.menusup #trigger { 
+	display:block; 
+	padding:12px 0 0 0; 
+}
+
+
+/* Menu de navegación procedimientos */
+
+#nav {
+	width:100%; 
+	height:85%;
+	position:absolute;
+	top:46px; left:0px;
+	}
+
+#menu { 
+	background-color: rgba(237,242,255,0.6); 
+	margin:0; 
+	padding:0; 
+	list-style-type:none; 
+	height:100%; 
+}
+	
+#menu ul {
+	width:100%; 
+	height:100%;
+	position:absolute;
+	top:0; 
+	left:-1000px;
+	background-color: rgba(237,242,255,0.8); 
+	margin:0; 
+	padding:0; 
+	list-style-type:none;
+}
+
+#menu ul ul { 
+	top:0; 
+}
+
+
+/* Estilo del menu */
+
+#menu li {
+	height:30px; 
+	padding-left:12px; 
+	padding-top:6px;
+	box-sizing:border-box;
+	border-bottom: 1px solid #ddd; 
+	border-right: 1px solid #ddd;
+	background-color: rgb(246,247,255);
+}
+
+#menu li.doble { 
+	height:30px; 
+}
+
+#trigger, .uno, .dos, .atras { 
+	font-family: "M PLUS 1 Code", monospace;
+	font-size:0.8em;
+	width:100%; 
+	display:block; 
+}
+
+#menu li.mas { 
+	background-image: url("../images/mas.png"); 
+	background-position:95%; 
+	background-repeat:no-repeat; 
+	background-color: rgb(237,242,255); 
+	padding-top:7px; 
+}
+
+#menu li.back {
+	height:35px; 
+	font-weight:bold; 
+	color: rgb(57,92,105); 
+	background-color: rgb(255,255,255); 
+	background-image: url("../images/back.png"); 
+	background-position:95%; 
+	background-repeat:no-repeat;
+}
+
+#menu li.back span {
+	margin-left:-5px; 
+	margin-top:3px;
+}
+
+#menu li.vip { 
+	height:35px; 
+	padding-top:8px;
+}}
+
+
+@media only screen and (max-width:360px){
+	
+	#menu li.doble { 
+		height:45px; 
+	}	
+}

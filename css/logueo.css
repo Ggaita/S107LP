@@ -1,0 +1,88 @@
+
+body {
+    background-color:rgb(221, 236, 236);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "M PLUS 1 Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+}
+
+.logueo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin: 5%;
+}
+
+
+
+.logo {
+    margin: auto;
+
+}
+
+img {
+    width: 580px;
+    height: 480px;
+    filter:drop-shadow(-6px 6px rgb(160, 148, 148));
+}
+
+
+.initio {
+    display: flex;
+    width: 380px;
+    height: 580px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 4dvh;
+    background: linear-gradient(rgb(8, 31, 238), rgb(248, 124, 8));
+    text-align: center;
+    box-shadow: -6px 6px rgb(160, 148, 148);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 53px;
+    justify-content: first baseline;
+    color:  rgb(221, 236, 236);
+}
+
+.formite {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    color:  rgb(221, 236, 236);
+    font-weight: 700;
+
+}
+
+label {
+    font-size: 25px;
+    margin: 2%;
+}
+
+input {
+    width: 190px;
+    height: 34px;
+    margin: 3%;
+    text-align: center;
+}
+
+.boton {
+    width: 190px;
+    height: 34px;
+    margin: 5%;
+    box-shadow: -1px 1px rgb(36, 35, 35);
+}

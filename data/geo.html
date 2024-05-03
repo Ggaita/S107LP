@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/procedimientos.css">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../images/favicom/favicon.ico" />
+<title>Geolocalización</title>
+</head>
+
+<body>
+
+    <h1>Mapa</h1>
+    <form id="form">
+        <label for="calle1">Calle 1:</label>
+        <input type="text" id="calle1" placeholder="Ingrese las iniciales de la calle">
+        <br>
+        <label for="calle2">Calle 2:</label>
+        <input type="text" id="calle2" placeholder="Ingrese las iniciales de la calle">
+        <br>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="map"></div>
+    <script src="../js/scriptmapa.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnke-SmPH0h7OqLbZd1JqOC5wTSwQOWeE&callback=initMap">
+</script>
+
+</body>
+
+</html>
