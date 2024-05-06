@@ -422,7 +422,8 @@ a:hover {
 }
 
 #menu li.mas { 
-	background-image: url("../images/mas.png"); 
+	background-image: url("../images/mas.png");
+	font-size:0.9em;
 	background-position:95%; 
 	background-repeat:no-repeat; 
 	background-color: rgb(237,242,255); 
@@ -444,7 +445,7 @@ a:hover {
 }
 
 #menu li.vip { 
-	height:35px; 
+	height:30px; 
 	padding-top:8px;
 }}
 
